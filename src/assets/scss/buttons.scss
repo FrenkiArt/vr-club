@@ -1,3 +1,33 @@
 button {
   cursor: pointer;
 }
+
+.link-btn {
+  background-color: transparent;
+  border: none;
+  color: #ff00a1;
+  padding: 0;
+  position: relative;
+  white-space: nowrap;
+
+  &::before {
+    border-bottom: 1px dashed currentColor;
+    content: '';
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    top: 100%;
+    transform: translate(-48%, 6px);
+    transition: transform 0.3s ease, color 0.3s ease;
+    width: 96%;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: #04dee7;
+
+    &::before {
+      transform: translate(-48%, 2px);
+    }
+  }
+}

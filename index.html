@@ -3,31 +3,226 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="assets/svg/vite.svg" />
-    <link rel="stylesheet" href="assets/fonts/lato/stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tektur:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <meta name="description" content="" />
+    <title>VR CLUB</title>
+    <meta name="description" content="VR CLUB" />
   </head>
   <body>
     <div id="app" class="page">
       <header id="header" class="header">
-        <div class="container">header</div>
+        <div class="container">
+          <div class="header__row">
+            <a href="/" class="logo">
+              <img
+                class="img"
+                loading="lazy"
+                src="assets/svg/logo.svg"
+                alt=""
+              />
+              <span class="sr-only">Logo</span>
+            </a>
+
+            <address class="address d-none d-sm-inline-flex">
+              <img
+                loading="lazy"
+                src="assets/svg/strategy.svg"
+                alt=""
+                class="address__media"
+              />
+              <div class="address__text">
+                г. Казань, <br />
+                ул. Тукая, 84
+              </div>
+            </address>
+
+            <address class="address d-none d-md-inline-flex">
+              <img
+                loading="lazy"
+                src="assets/svg/casper.svg"
+                alt=""
+                class="address__media"
+              />
+              <div class="address__text">
+                <span class="ws-nowrap">Пн-Пт: 09:00 - 23.00</span> <br />
+                <span class="ws-nowrap">Сб-Вс: 10:00 - 02.00</span>
+              </div>
+            </address>
+
+            <div class="socials d-none d-lg-inline-flex">
+              <a href="#" class="socials__link">
+                <img loading="lazy" src="assets/svg/soc-instagram.svg" alt="" />
+                <span class="sr-only">instagram</span>
+              </a>
+              <a href="#" class="socials__link">
+                <img loading="lazy" src="assets/svg/soc-vkontakte.svg" alt="" />
+                <span class="sr-only">vkontakte</span>
+              </a>
+              <a href="#" class="socials__link">
+                <img loading="lazy" src="assets/svg/soc-telegram.svg" alt="" />
+                <span class="sr-only">telegram</span>
+              </a>
+            </div>
+
+            <div class="address">
+              <img
+                loading="lazy"
+                src="assets/svg/joystick.svg"
+                alt=""
+                class="address__media"
+              />
+              <div class="address__content">
+                <a href="tel:+88000000000" class="link fw-bold text-end"
+                  >8 (800) 000-00-00
+                </a>
+
+                <button type="button" class="link-btn text-end">
+                  Заказать звонок
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </header>
 
       <section id="first" class="first">
         <div class="container">
           <div class="row">
-            <div class="col-6">
-              11111111 111111 11111 11111111 11111 1 1111111 111111 11111
-              11111111 11111 1 1 1 1 1 1 1 1
+            <div class="col-12 col-md-7">
+              <h1 class="h1 text-uppercase">
+                <span class="color-blue">НЕРеальные эмоции</span>
+                в&nbsp;парке виртуальной реальности
+              </h1>
+
+              <div class="h3">
+                Получите максимум восторга от&nbsp;каждого посещения
+                в&nbsp;Казани
+              </div>
+
+              <button class="btn btn-main" type="button">Хочу играть!</button>
             </div>
-            <div class="col-3">
-              11111111 111111 11111 11111111 11111 1 1111111 111111 11111
-              11111111 11111 1 1 1 1 1 1 1 1
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="list-qwests">
+            <div class="card-qwest">
+              <div class="card-qwest__media">
+                <img
+                  loading="lazy"
+                  src="assets/img/qwest-1.png"
+                  alt=""
+                  class="card-qwest__img"
+                />
+              </div>
+              <div class="card-qwest__content">
+                <img
+                  class="card-qwest__bg-img"
+                  loading="lazy"
+                  src="assets/svg/qwest-hud.svg"
+                  alt=""
+                />
+
+                <div class="card-qwest__text">
+                  VR-квесты:
+                  <br />
+                  4 формата
+                </div>
+              </div>
             </div>
-            <div class="col-3">
-              11111111 111111 11111 11111111 11111 1 1111111 111111 11111
-              11111111 11111 1 1 1 1 1 1 1 1
+            <div class="card-qwest">
+              <div class="card-qwest__media">
+                <img
+                  loading="lazy"
+                  src="assets/img/qwest-2.png"
+                  alt=""
+                  class="card-qwest__img"
+                />
+              </div>
+              <div class="card-qwest__content">
+                <img
+                  class="card-qwest__bg-img"
+                  loading="lazy"
+                  src="assets/svg/qwest-hud.svg"
+                  alt=""
+                />
+                <div class="card-qwest__text">
+                  Мультиплеер <br />
+                  от 7 лет: в каждую игру могут играть 1-8 человек
+                </div>
+              </div>
+            </div>
+            <div class="card-qwest">
+              <div class="card-qwest__media">
+                <img
+                  loading="lazy"
+                  src="assets/img/qwest-3.png"
+                  alt=""
+                  class="card-qwest__img"
+                />
+              </div>
+              <div class="card-qwest__content">
+                <img
+                  class="card-qwest__bg-img"
+                  loading="lazy"
+                  src="assets/svg/qwest-hud.svg"
+                  alt=""
+                />
+                <div class="card-qwest__text">
+                  Полная аренда
+                  <br />
+                  клуба под ваше мероприятие
+                </div>
+              </div>
+            </div>
+            <div class="card-qwest">
+              <div class="card-qwest__media">
+                <img
+                  loading="lazy"
+                  src="assets/img/qwest-4.png"
+                  alt=""
+                  class="card-qwest__img"
+                />
+              </div>
+              <div class="card-qwest__content">
+                <img
+                  class="card-qwest__bg-img"
+                  loading="lazy"
+                  src="assets/svg/qwest-hud.svg"
+                  alt=""
+                />
+                <div class="card-qwest__text">
+                  2 VIP комнаты <br />
+                  ваше мероприятие до 25 человек PS с 100+ игр
+                </div>
+              </div>
+            </div>
+            <div class="card-qwest">
+              <div class="card-qwest__media">
+                <img
+                  loading="lazy"
+                  src="assets/img/qwest-5.png"
+                  alt=""
+                  class="card-qwest__img"
+                />
+              </div>
+              <div class="card-qwest__content">
+                <img
+                  class="card-qwest__bg-img"
+                  loading="lazy"
+                  src="assets/svg/qwest-hud.svg"
+                  alt=""
+                />
+                <div class="card-qwest__text">
+                  Корпоративы/ <br />
+                  Дни рождения/ Акции + скидки
+                </div>
+              </div>
             </div>
           </div>
         </div>

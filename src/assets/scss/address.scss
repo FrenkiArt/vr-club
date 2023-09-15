@@ -1,0 +1,32 @@
+.address {
+  align-items: center;
+  color: #ffffff;
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 400;
+  gap: 0.5rem;
+  margin-bottom: 0;
+
+  @media (min-width: 768px) {
+    gap: 1rem;
+  }
+
+  // .address__media
+  &__media {
+    height: 36px;
+    object-fit: contain;
+    width: 36px;
+  }
+
+  // .address__text
+  &__text {
+    position: relative;
+  }
+
+  // .address__content
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+}

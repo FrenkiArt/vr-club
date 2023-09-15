@@ -1,22 +1,13 @@
-$font-family-base: sans-serif;
+$font-family-base: 'Tektur', cursive;
 //$primary: orange;
-
-@import 'bootstrap/scss/bootstrap-reboot.scss';
-@import 'bootstrap/scss/bootstrap-grid.scss';
-@import 'bootstrap/scss/bootstrap-utilities.scss';
-// @import 'bootstrap/scss/bootstrap.scss';
 
 :root {
   --main-fz: 16px;
   --main-lh: 1.5;
-  --main-ff: sans-serif;
-  --second-ff: sans-serif;
-  --main-fc: #000000;
+  --main-ff: 'Tektur', cursive;
   --swiper-theme-color: #12a6df;
   --swiper-pagination-bullet-horizontal-gap: 10px;
-  --main-color: 'inherit';
-  --second-color: 'inherit';
-  --color-accent: blue;
+  --accent-color: #ff7d04;
 }
 
 * {
@@ -24,7 +15,7 @@ $font-family-base: sans-serif;
   outline: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   scrollbar-width: thin;
-  scrollbar-color: #12a6df #bdbdbd;
+  scrollbar-color: #ff7d04 #18122e;
 }
 
 *::-webkit-scrollbar {
@@ -32,11 +23,11 @@ $font-family-base: sans-serif;
 }
 
 *::-webkit-scrollbar-track {
-  background: #bdbdbd;
+  background: #18122e;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #12a6df;
+  background-color: #ff7d04;
   border-radius: 3px;
 }
 
@@ -45,7 +36,7 @@ html {
 }
 
 body {
-  color: var(--main-fc);
+  color: #ffffff;
   font-family: var(--main-ff);
   font-size: var(--main-fz);
   font-style: normal;
@@ -55,13 +46,15 @@ body {
   min-height: 100vh;
 }
 
-/* .container {
-  @media (min-width: 1280px) {
-    max-width: 1224px;
-    padding-left: 0;
-    padding-right: 0;
+.container {
+  @media (min-width: 1500px) {
+    max-width: 1420px;
   }
-} */
+
+  @media (min-width: 1550px) {
+    max-width: 1500px;
+  }
+}
 
 /* .row {
   --bs-gutter-x: 20px;
@@ -82,6 +75,7 @@ body {
   max-width: 100%;
   min-height: 100vh;
   // overflow: hidden;
+  background-color: #18122e;
 }
 
 .img {

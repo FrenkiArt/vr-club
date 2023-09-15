@@ -1,5 +1,13 @@
 a {
+  color: inherit;
+  text-decoration: none;
 }
 
-a:hover {
+.link {
+  white-space: nowrap;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--accent-color);
+  }
 }
