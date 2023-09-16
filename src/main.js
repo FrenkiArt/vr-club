@@ -15,6 +15,9 @@ import './assets/scss/buttons.scss';
 
 import './assets/scss/qwest.scss';
 import './assets/scss/address.scss';
+import './assets/scss/room-trigger.scss';
+import './assets/scss/card-info.scss';
+import './assets/scss/card-slide.scss';
 
 import './assets/scss/stuff.scss';
 import './assets/scss/added-styles.scss';

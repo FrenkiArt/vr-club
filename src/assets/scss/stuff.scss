@@ -178,17 +178,146 @@ input[type='range']::-ms-track {
 }
  */
 
-.h1 {
-  @media (min-width: 1200px) {
-    font-size: 64px;
+.card-first {
+  padding: 125px 0 190px;
+
+  // .card-first__title
+  &__title {
+    margin-bottom: 30px;
     font-weight: 700;
-    line-height: 130%;
+  }
+
+  // .card-first__subtitle
+  &__subtitle {
+    margin-bottom: 48px;
+  }
+
+  // .card-first__btn
+  &__btn {
+    white-space: nowrap;
+
+    .btn-main__inner {
+      font-size: 20px;
+      line-height: auto;
+      padding-left: 110px;
+      padding-right: 110px;
+    }
   }
 }
 
-.h3 {
-  @media (min-width: 1200px) {
-    font-size: 30px;
-    font-weight: 400;
+.card-first-media {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+
+  .float-img-1 {
+    filter: drop-shadow(0px 0px 50px rgba(255, 125, 4, 0.1));
+    left: -1%;
+    position: absolute;
+    top: 11%;
+  }
+
+  .float-img-2 {
+    bottom: 7%;
+    filter: drop-shadow(0px 0px 50px rgba(115, 4, 255, 0.2));
+    position: absolute;
+    right: -11%;
+  }
+}
+
+.room-media {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+
+  // .room-media__img
+  &__img {
+    mix-blend-mode: lighten;
+    transform: translate(-180px, -40px);
+    z-index: -1;
+  }
+}
+
+.card-room {
+  position: relative;
+  z-index: 2;
+
+  // .card-room__title
+  &__title {
+    margin-bottom: 20px;
+    max-width: 713px;
+  }
+
+  // .card-room__subtitle
+  &__subtitle {
+    margin-bottom: 82px;
+  }
+
+  // .card-room__items
+  &__items {
+    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px 26px;
+    justify-content: space-between;
+    max-width: 917px;
+  }
+
+  // .card-room__btn
+  &__btn {
+    position: relative;
+  }
+}
+
+.slider-zones {
+  --swiper-navigation-size: 60px;
+
+  overflow: visible;
+
+  .swiper-slide {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .swiper-slide-visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    align-items: center;
+    background-color: #ff00a1;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    width: 60px;
+
+    &:hover,
+    &:focus-visible {
+      filter: brightness(0.9);
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .swiper-button-prev {
+    transform: translate(-140px, 0);
+    clip-path: polygon(15px 0, 100% 0, 100% 100%, 0 100%, 0 15px);
+  }
+
+  .swiper-button-next {
+    transform: translate(140px, 0);
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% calc(100% - 15px),
+      calc(100% - 15px) 100%,
+      0 100%
+    );
   }
 }

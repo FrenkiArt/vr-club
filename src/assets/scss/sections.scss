@@ -1,0 +1,275 @@
+.sec-first {
+  background-image: linear-gradient(
+    180deg,
+    rgba(33, 23, 64, 0) 0%,
+    #211740 50%,
+    rgba(33, 23, 64, 0) 100%
+  );
+  padding-top: var(--header-height);
+  position: relative;
+
+  // .sec-first__bg
+  &__bg {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  // .sec-first__gradient
+  &__gradient {
+    background-image: linear-gradient(
+      180deg,
+      rgba(33, 23, 64, 0) 0%,
+      #211740 50%,
+      rgba(33, 23, 64, 0.9) 100%
+    );
+    height: 328px;
+    pointer-events: none;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .float-stuff--1 {
+    top: 20px;
+    left: -100px;
+  }
+  .float-stuff--2 {
+    top: 87%;
+    left: 180px;
+  }
+  .float-stuff--3 {
+    top: 100px;
+    right: -90px;
+  }
+  .float-stuff--4 {
+    top: 101%;
+    right: -15px;
+  }
+  .float-stuff--5 {
+    top: 30%;
+    left: 68%;
+  }
+  .float-stuff--6 {
+    top: 75%;
+    left: 67%;
+    z-index: 2;
+  }
+  .float-stuff--7 {
+    top: 21%;
+    left: 82%;
+  }
+  .float-stuff--8 {
+    top: 38%;
+    left: 91%;
+    z-index: 2;
+  }
+}
+
+.sec-zones {
+  margin-bottom: -24px;
+  margin-top: -120px;
+  position: relative;
+
+  // .sec-zones__headline
+  &__headline {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-bottom: 115px;
+    text-align: center;
+  }
+
+  // .sec-zones__slider
+  &__slider {
+    margin-bottom: 70px;
+  }
+
+  // .sec-zones__footer
+  &__footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  // .sec-zones__gradient
+  &__gradient {
+    background-image: linear-gradient(
+      180deg,
+      #211740 0%,
+      #211740 50%,
+      rgba(33, 23, 64, 0) 100%
+    );
+    bottom: 0;
+    height: 296px;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    transform: translate(0, 240px);
+    width: 100%;
+    z-index: 1;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .glass {
+    left: 50%;
+    max-width: 92%;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: -1;
+  }
+
+  .float-stuff--9 {
+    top: 37%;
+    left: -115px;
+  }
+  .float-stuff--10 {
+    top: 116%;
+    left: 60%;
+  }
+  .float-stuff--11 {
+    top: 95%;
+    left: 96%;
+  }
+  .float-stuff--12 {
+    top: 34%;
+    left: 106%;
+  }
+}
+
+.sec-room {
+  padding: 235px 0 110px;
+  position: relative;
+
+  // .sec-first__bg
+  &__bg {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scale(1, -1);
+    width: 100%;
+  }
+
+  // .sec-room__gradient
+  &__gradient {
+    background-image: linear-gradient(
+      0deg,
+      #211740 0%,
+      #211740 50%,
+      rgba(33, 23, 64, 0) 100%
+    );
+    bottom: 0;
+    height: 300px;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .float-stuff--13 {
+    top: 49%;
+    left: -125px;
+  }
+  .float-stuff--14 {
+    top: 93%;
+    left: 42%;
+    z-index: 1;
+  }
+  .float-stuff--15 {
+    top: 93%;
+    left: 100%;
+    z-index: 1;
+  }
+}
+
+.float-stuff {
+  pointer-events: none;
+  position: absolute;
+}
+
+.float-spot {
+  border-radius: 100%;
+  filter: blur(250px);
+  height: 462px;
+  pointer-events: none;
+  position: absolute;
+  width: 462px;
+}
+.float-spot--1 {
+  background-color: #00fef3;
+  left: -250px;
+  opacity: 0.5;
+  top: -250px;
+}
+.float-spot--2 {
+  background-color: #b71fff;
+  bottom: 10px;
+  opacity: 0.5;
+  right: 0;
+  transform: translate(75%, 0);
+}
+.float-spot--3 {
+  background-color: rgba(183, 31, 255, 1);
+  left: 0;
+  opacity: 0.5;
+  top: 50%;
+  transform: translate(-75%, 0);
+}
+.float-spot--4 {
+  background-color: rgba(0, 178, 254, 1);
+  left: 61%;
+  opacity: 0.5;
+  top: 15%;
+  transform: translate(0, 0);
+}
+.float-spot--5 {
+  background-color: rgba(0, 178, 254, 1);
+  left: 100%;
+  opacity: 0.5;
+  top: 0;
+  transform: translate(-25%, -52%);
+}
+
+.float-nlo {
+  position: absolute;
+}
+.float-nlo--1 {
+  left: 0;
+  top: 0;
+  transform: translate(-60%, -39%);
+}
+.float-nlo--2 {
+  left: 100%;
+  top: 0;
+  transform: translate(-32%, -50%);
+}
+.float-nlo--3 {
+  bottom: 0;
+  left: 0;
+  transform: translate(-57%, 34%);
+}

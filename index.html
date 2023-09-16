@@ -9,6 +9,17 @@
       href="https://fonts.googleapis.com/css2?family=Tektur:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
+    ></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VR CLUB</title>
     <meta name="description" content="VR CLUB" />
@@ -90,21 +101,106 @@
         </div>
       </header>
 
-      <section id="first" class="first">
+      <section id="sec-first" class="sec-first">
+        <img
+          loading="lazy"
+          src="assets/img/sec-first-bg.png"
+          alt=""
+          class="sec-first__bg"
+        />
+
         <div class="container">
+          <div class="float-spot float-spot--1"></div>
+          <div class="float-spot float-spot--2"></div>
+          <img
+            loading="lazy"
+            src="assets/img/float-1.png"
+            alt=""
+            class="float-stuff float-stuff--1"
+          />
+          <img
+            loading="lazy"
+            src="assets/img/float-2.png"
+            alt=""
+            class="float-stuff float-stuff--2"
+          />
+          <img
+            loading="lazy"
+            src="assets/img/float-3.png"
+            alt=""
+            class="float-stuff float-stuff--3"
+          />
+          <img
+            loading="lazy"
+            src="assets/img/float-4.png"
+            alt=""
+            class="float-stuff float-stuff--4"
+          />
+          <img
+            loading="lazy"
+            src="assets/img/float-5.png"
+            alt=""
+            class="float-stuff float-stuff--5"
+          />
+          <img
+            loading="lazy"
+            src="assets/img/float-6.png"
+            alt=""
+            class="float-stuff float-stuff--6"
+          />
+          <img
+            loading="lazy"
+            src="assets/img/float-7.png"
+            alt=""
+            class="float-stuff float-stuff--7"
+          />
+          <img
+            loading="lazy"
+            src="assets/img/float-8.png"
+            alt=""
+            class="float-stuff float-stuff--8"
+          />
+
           <div class="row">
-            <div class="col-12 col-md-7">
-              <h1 class="h1 text-uppercase">
-                <span class="color-blue">НЕРеальные эмоции</span>
-                в&nbsp;парке виртуальной реальности
-              </h1>
+            <div class="col-12 col-md-6">
+              <div class="card-first">
+                <h1 class="h1 text-uppercase card-first__title">
+                  <span class="color-blue">НЕРеальные эмоции</span>
+                  в&nbsp;парке виртуальной реальности
+                </h1>
 
-              <div class="h3">
-                Получите максимум восторга от&nbsp;каждого посещения
-                в&nbsp;Казани
+                <div class="h3 card-first__subtitle">
+                  Получите максимум восторга от&nbsp;каждого
+                  посещения&nbsp;в&nbsp;Казани
+                </div>
+
+                <button class="btn btn-main card-first__btn" type="button">
+                  <img
+                    loading="lazy"
+                    src="assets/img/btn-bg.png"
+                    alt=""
+                    class="btn-main__blur"
+                  />
+                  <span class="btn-main__inner">Хочу играть!</span>
+                </button>
               </div>
+            </div>
 
-              <button class="btn btn-main" type="button">Хочу играть!</button>
+            <div class="col-12 col-md-6">
+              <div class="card-first-media">
+                <img
+                  loading="lazy"
+                  src="assets/img/float-boy.png"
+                  alt=""
+                  class="float-img-1"
+                />
+                <img
+                  loading="lazy"
+                  src="assets/img/float-girl.png"
+                  alt=""
+                  class="float-img-2"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -226,15 +322,486 @@
             </div>
           </div>
         </div>
+
+        <div class="sec-first__gradient"></div>
       </section>
 
-      <footer id="footer" class="footer">
-        <div class="container">footer</div>
-      </footer>
+      <section class="sec-zones">
+        <div class="container">
+          <div class="float-spot float-spot--3"></div>
+          <div class="float-spot float-spot--4"></div>
+          <div class="float-spot float-spot--5"></div>
 
-      <svg width="8" height="13" class="">
+          <img
+            loading="lazy"
+            src="assets/img/float-nlo-1.png"
+            alt=""
+            class="float-nlo float-nlo--1"
+          />
+          <img
+            loading="lazy"
+            src="assets/img/float-nlo-2.png"
+            alt=""
+            class="float-nlo float-nlo--2"
+          />
+          <img
+            loading="lazy"
+            src="assets/img/float-nlo-3.png"
+            alt=""
+            class="float-nlo float-nlo--3"
+          />
+
+          <img
+            loading="lazy"
+            src="assets/img/float-9.png"
+            alt=""
+            class="float-stuff float-stuff--9"
+          />
+          <img
+            loading="lazy"
+            src="assets/img/float-10.png"
+            alt=""
+            class="float-stuff float-stuff--10"
+          />
+          <img
+            loading="lazy"
+            src="assets/img/float-11.png"
+            alt=""
+            class="float-stuff float-stuff--11"
+          />
+          <img
+            loading="lazy"
+            src="assets/img/float-12.png"
+            alt=""
+            class="float-stuff float-stuff--12"
+          />
+
+          <img loading="lazy" src="assets/img/glass.png" alt="" class="glass" />
+
+          <div class="sec-zones__headline">
+            <h2 class="h2">
+              <span class="color-blue">4 Игровых VR зоны</span> для детей и
+              взрослых
+            </h2>
+            <div class="h4">
+              <span class="color-blue">1000+ VR игр</span> для одного или
+              компании
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <div class="swiper slider-zones sec-zones__slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card-slide">
+                      <a href="#" class="card-slide__link-media">
+                        <div class="card-slide__media">
+                          <img
+                            loading="lazy"
+                            src="assets/img/slide-1.jpg"
+                            alt=""
+                            class="card-slide__img"
+                          />
+                          <div class="btn btn-main card-slide__btn">
+                            <img
+                              loading="lazy"
+                              src="assets/img/btn-bg.png"
+                              alt=""
+                              class="btn-main__blur"
+                            />
+                            <span class="btn-main__inner"
+                              >Смотреть подробнее</span
+                            >
+                          </div>
+                        </div>
+                      </a>
+
+                      <div class="card-slide__title">
+                        THE BLU / <span class="color-blue">Эмоции</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="card-slide">
+                      <a href="#" class="card-slide__link-media">
+                        <div class="card-slide__media">
+                          <img
+                            loading="lazy"
+                            src="assets/img/slide-1.jpg"
+                            alt=""
+                            class="card-slide__img"
+                          />
+                          <div class="btn btn-main card-slide__btn">
+                            <img
+                              loading="lazy"
+                              src="assets/img/btn-bg.png"
+                              alt=""
+                              class="btn-main__blur"
+                            />
+                            <span class="btn-main__inner"
+                              >Смотреть подробнее</span
+                            >
+                          </div>
+                        </div>
+                      </a>
+
+                      <div class="card-slide__title">
+                        THE BLU / <span class="color-blue">Эмоции</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="card-slide">
+                      <a href="#" class="card-slide__link-media">
+                        <div class="card-slide__media">
+                          <img
+                            loading="lazy"
+                            src="assets/img/slide-1.jpg"
+                            alt=""
+                            class="card-slide__img"
+                          />
+                          <div class="btn btn-main card-slide__btn">
+                            <img
+                              loading="lazy"
+                              src="assets/img/btn-bg.png"
+                              alt=""
+                              class="btn-main__blur"
+                            />
+                            <span class="btn-main__inner"
+                              >Смотреть подробнее</span
+                            >
+                          </div>
+                        </div>
+                      </a>
+
+                      <div class="card-slide__title">
+                        THE BLU / <span class="color-blue">Эмоции</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="card-slide">
+                      <a href="#" class="card-slide__link-media">
+                        <div class="card-slide__media">
+                          <img
+                            loading="lazy"
+                            src="assets/img/slide-1.jpg"
+                            alt=""
+                            class="card-slide__img"
+                          />
+                          <div class="btn btn-main card-slide__btn">
+                            <img
+                              loading="lazy"
+                              src="assets/img/btn-bg.png"
+                              alt=""
+                              class="btn-main__blur"
+                            />
+                            <span class="btn-main__inner"
+                              >Смотреть подробнее</span
+                            >
+                          </div>
+                        </div>
+                      </a>
+
+                      <div class="card-slide__title">
+                        THE BLU / <span class="color-blue">Эмоции</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="card-slide">
+                      <a href="#" class="card-slide__link-media">
+                        <div class="card-slide__media">
+                          <img
+                            loading="lazy"
+                            src="assets/img/slide-1.jpg"
+                            alt=""
+                            class="card-slide__img"
+                          />
+                          <div class="btn btn-main card-slide__btn">
+                            <img
+                              loading="lazy"
+                              src="assets/img/btn-bg.png"
+                              alt=""
+                              class="btn-main__blur"
+                            />
+                            <span class="btn-main__inner"
+                              >Смотреть подробнее</span
+                            >
+                          </div>
+                        </div>
+                      </a>
+
+                      <div class="card-slide__title">
+                        THE BLU / <span class="color-blue">Эмоции</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-button-prev">
+                  <img loading="lazy" src="assets/svg/arr-left.svg" alt="" />
+                </div>
+                <div class="swiper-button-next">
+                  <img loading="lazy" src="assets/svg/arr-right.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sec-zones__footer">
+            <div class="card-info">
+              <div class="card-info__border"></div>
+
+              <img
+                loading="lazy"
+                src="assets/img/info-border.png"
+                alt=""
+                class="card-info__img-blur"
+              />
+
+              <div class="card-info__content">
+                <div class="address">
+                  <img
+                    loading="lazy"
+                    src="assets/svg/bomb.svg"
+                    alt=""
+                    class="address__media"
+                  />
+                  <div class="address__content">
+                    <div class="h4">
+                      <span class="color-blue"
+                        >Это минимум в&nbsp;1000 раз круче</span
+                      ><span class="color-orange">,</span>
+                    </div>
+
+                    <div class="h5">чем играть на компьютере или приставке</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sec-zones__gradient"></div>
+      </section>
+
+      <section id="sec-room" class="sec-room">
+        <img
+          loading="lazy"
+          src="assets/img/sec-first-bg.png"
+          alt=""
+          class="sec-room__bg"
+        />
+
+        <div class="container">
+          <img
+            loading="lazy"
+            src="assets/img/float-13.png"
+            alt=""
+            class="float-stuff float-stuff--13"
+          />
+          <img
+            loading="lazy"
+            src="assets/img/float-14.png"
+            alt=""
+            class="float-stuff float-stuff--14"
+          />
+          <img
+            loading="lazy"
+            src="assets/img/float-15.png"
+            alt=""
+            class="float-stuff float-stuff--15"
+          />
+
+          <div class="row">
+            <div class="col-12 col-md-8">
+              <div class="card-room">
+                <h2 class="h2 text-uppercase card-room__title">
+                  <span class="color-blue">VR ROOM</span> без&nbsp;посторонних
+                  на площадке -
+                  <span class="color-blue">100%&nbsp;свободы действий</span>
+                </h2>
+
+                <div class="h4 card-room__subtitle">
+                  Готовы к полному погружению?
+                </div>
+
+                <div class="card-room__items">
+                  <div class="room-trigger">
+                    <div class="room-trigger__border"></div>
+
+                    <img
+                      loading="lazy"
+                      src="assets/img/room-border.png"
+                      alt=""
+                      class="room-trigger__img-blur"
+                    />
+
+                    <div class="room-trigger__media">
+                      <img
+                        loading="lazy"
+                        src="assets/img/room-img-1.png"
+                        alt=""
+                        class="room-trigger__img"
+                      />
+                    </div>
+
+                    <div class="room-trigger__content">
+                      <div class="h5 fw-bold room-trigger__title">
+                        <span class="color-blue">VR квесты</span> -
+                        это&nbsp;впечатления
+                      </div>
+                      <ul class="room-trigger__list">
+                        <li>загадки</li>
+                        <li>головоломки</li>
+                        <li>тактильное взаимодействие с&nbsp;предметами</li>
+                        <li>полный эффект присутствия</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="room-trigger">
+                    <div class="room-trigger__border"></div>
+
+                    <img
+                      loading="lazy"
+                      src="assets/img/room-border.png"
+                      alt=""
+                      class="room-trigger__img-blur"
+                    />
+                    <div class="room-trigger__media">
+                      <img
+                        loading="lazy"
+                        src="assets/img/room-img-2.png"
+                        alt=""
+                        class="room-trigger__img"
+                      />
+                    </div>
+
+                    <div class="room-trigger__content">
+                      <div class="h5 fw-bold room-trigger__title">
+                        <span class="color-blue">VR снаряжение</span> -
+                        это&nbsp;атмосфера
+                      </div>
+                      <ul class="room-trigger__list">
+                        <li>360 градусов обзора</li>
+                        <li>спецжилеты с тактильной связью</li>
+                        <li>ножные 3D сенсоры</li>
+                        <li>перегрузочная платформа</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="room-trigger">
+                    <div class="room-trigger__border"></div>
+
+                    <img
+                      loading="lazy"
+                      src="assets/img/room-border.png"
+                      alt=""
+                      class="room-trigger__img-blur"
+                    />
+                    <div class="room-trigger__media">
+                      <img
+                        loading="lazy"
+                        src="assets/img/room-img-3.png"
+                        alt=""
+                        class="room-trigger__img"
+                      />
+                    </div>
+
+                    <div class="room-trigger__content">
+                      <div class="h5 fw-bold room-trigger__title">
+                        <span class="color-blue">VR железо</span> - это
+                        производительность
+                      </div>
+                      <ul class="room-trigger__list">
+                        <li>топовые INTEL и RYZEN</li>
+                        <li>GPU, которые тянут 8К 60 FPS</li>
+                        <li>100+ Гб ОЗУ</li>
+                        <li>10+ Тб ПЗУ</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="room-trigger horizontal">
+                    <div class="room-trigger__border"></div>
+
+                    <img
+                      loading="lazy"
+                      src="assets/img/room-border.png"
+                      alt=""
+                      class="room-trigger__img-blur"
+                    />
+                    <div class="room-trigger__media">
+                      <img
+                        loading="lazy"
+                        src="assets/img/room-img-4.png"
+                        alt=""
+                        class="room-trigger__img"
+                      />
+                    </div>
+
+                    <div class="room-trigger__content">
+                      <div class="h5 fw-bold room-trigger__title">
+                        <span class="color-blue">VR VIP комната</span> - это
+                        комфорт
+                      </div>
+                      <ul class="room-trigger__list">
+                        <li>
+                          весело и интересно отметить день рождения, корпоратив
+                          или просто собраться дружной компанией 
+                        </li>
+                        <li>мягкие кресла и пуфики</li>
+                        <li>PS 5 с сотней игрушек на выбор</li>
+                        <li>OLED экран с углом обзора 178 градусов</li>
+                        <li>
+                          можно с комфортом отдохнуть или обсудить стратегию
+                          между разными играми
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <button class="btn btn-main card-room__btn" type="button">
+                  <img
+                    loading="lazy"
+                    src="assets/img/btn-bg.png"
+                    alt=""
+                    class="btn-main__blur"
+                  />
+                  <span class="btn-main__inner"
+                    >Купить подарочный сертификат</span
+                  >
+                </button>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="room-media">
+                <img
+                  class="room-media__img"
+                  loading="lazy"
+                  src="assets/img/big-boy.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sec-room__gradient"></div>
+      </section>
+
+      <!-- <svg width="8" height="13" class="">
         <use xlink:href="assets/svg/svg_sprite.svg#geo"></use>
-      </svg>
+      </svg> -->
     </div>
 
     <script defer type="module" src="/src/main.js"></script>

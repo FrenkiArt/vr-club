@@ -8,6 +8,7 @@ $font-family-base: 'Tektur', cursive;
   --swiper-theme-color: #12a6df;
   --swiper-pagination-bullet-horizontal-gap: 10px;
   --accent-color: #ff7d04;
+  --header-height: 90px;
 }
 
 * {
@@ -52,7 +53,7 @@ body {
   }
 
   @media (min-width: 1550px) {
-    max-width: 1500px;
+    max-width: 1524px;
   }
 }
 
@@ -74,8 +75,8 @@ body {
   flex-direction: column;
   max-width: 100%;
   min-height: 100vh;
-  // overflow: hidden;
-  background-color: #18122e;
+  overflow: hidden;
+  background-color: #211740;
 }
 
 .img {
@@ -93,8 +94,43 @@ body {
   }
 }
 
-.sec-title {
-  @media screen and (max-width: 640px) {
+.h1 {
+  @media (min-width: 1200px) {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+}
+
+.h2 {
+  @media (min-width: 1200px) {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+}
+
+.h3 {
+  @media (min-width: 1200px) {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+}
+
+.h4 {
+  @media (min-width: 1200px) {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+}
+
+.h5 {
+  @media (min-width: 1200px) {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3;
   }
 }
 
