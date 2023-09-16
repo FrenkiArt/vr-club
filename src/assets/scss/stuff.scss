@@ -227,15 +227,22 @@ input[type='range']::-ms-track {
 }
 
 .room-media {
+  background-color: transparent;
   height: 100%;
   width: 100%;
-  background-color: transparent;
 
   // .room-media__img
   &__img {
+    display: none;
     mix-blend-mode: lighten;
-    transform: translate(-180px, -40px);
+    width: 100%;
     z-index: -1;
+
+    @media (min-width: 1200px) {
+      display: block;
+      transform: translate(-305px, -40px);
+      width: auto;
+    }
   }
 }
 
@@ -256,12 +263,20 @@ input[type='range']::-ms-track {
 
   // .card-room__items
   &__items {
-    margin-bottom: 60px;
     display: flex;
     flex-wrap: wrap;
-    gap: 36px 26px;
-    justify-content: space-between;
-    max-width: 917px;
+    gap: 4rem 1rem;
+    margin-bottom: 60px;
+    max-width: 100%;
+
+    @media (min-width: 992px) {
+      justify-content: space-between;
+      gap: 36px 26px;
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 917px;
+    }
   }
 
   // .card-room__btn

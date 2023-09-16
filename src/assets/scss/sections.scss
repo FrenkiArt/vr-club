@@ -154,8 +154,12 @@
 }
 
 .sec-room {
-  padding: 235px 0 110px;
+  padding: 130px 0 80px;
   position: relative;
+
+  @media (min-width: 768px) {
+    padding: 235px 0 110px;
+  }
 
   // .sec-first__bg
   &__bg {
