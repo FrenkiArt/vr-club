@@ -96,16 +96,33 @@
 
 .sec-zones {
   margin-bottom: -24px;
-  margin-top: -120px;
+  margin-top: -200px;
   position: relative;
+
+  @media (min-width: 576px) {
+    margin-top: -170px;
+  }
+
+  @media (min-width: 768px) {
+    margin-top: -120px;
+  }
 
   // .sec-zones__headline
   &__headline {
     display: flex;
     flex-direction: column;
     gap: 22px;
-    margin-bottom: 115px;
+    margin-bottom: 50px;
+    position: relative;
     text-align: center;
+
+    @media (min-width: 576px) {
+      margin-bottom: 70px;
+    }
+
+    @media (min-width: 992px) {
+      margin-bottom: 115px;
+    }
   }
 
   // .sec-zones__slider
@@ -176,6 +193,10 @@
   position: relative;
 
   @media (min-width: 768px) {
+    padding: 150px 0 110px;
+  }
+
+  @media (min-width: 1200px) {
     padding: 235px 0 110px;
   }
 
@@ -281,17 +302,36 @@
   position: absolute;
 }
 .float-nlo--1 {
+  display: none;
   left: 0;
   top: 0;
   transform: translate(-60%, -39%);
+
+  @media (min-width: 992px) {
+    display: block;
+  }
 }
 .float-nlo--2 {
+  display: none;
   left: 100%;
   top: 0;
   transform: translate(-32%, -50%);
+
+  @media (min-width: 992px) {
+    display: block;
+  }
 }
 .float-nlo--3 {
   bottom: 0;
   left: 0;
-  transform: translate(-57%, 34%);
+  transform: translate(-40%, 34%);
+  display: none;
+
+  @media (min-width: 1500px) {
+    display: block;
+  }
+
+  @media (min-width: 1700px) {
+    transform: translate(-57%, 34%);
+  }
 }

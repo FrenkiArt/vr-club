@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const sliderZones = new Swiper('.slider-zones', {
-    slidesPerView: 3,
     watchSlidesProgress: true,
 
     navigation: {
@@ -18,23 +17,22 @@ document.addEventListener('DOMContentLoaded', () => {
       prevEl: '.swiper-button-prev',
     },
 
-    /*  breakpoints: {
-      // when window width is >= 320px
-      320: {
+    breakpoints: {
+      300: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+
+      768: {
         slidesPerView: 2,
-        spaceBetween: 20
+        spaceBetween: 20,
       },
-      // when window width is >= 480px
-      480: {
+
+      1400: {
         slidesPerView: 3,
-        spaceBetween: 30
+        spaceBetween: 20,
       },
-      // when window width is >= 640px
-      640: {
-        slidesPerView: 4,
-        spaceBetween: 40
-      }
-    } */
+    },
   });
 });
 
