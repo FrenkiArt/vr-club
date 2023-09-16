@@ -61,18 +61,36 @@
     left: 68%;
   }
   .float-stuff--6 {
-    top: 75%;
+    display: none;
     left: 67%;
+    top: 75%;
     z-index: 2;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
   }
   .float-stuff--7 {
-    top: 21%;
+    display: none;
     left: 82%;
+    top: 21%;
+
+    @media (min-width: 992px) {
+      display: block;
+    }
   }
   .float-stuff--8 {
-    top: 38%;
+    display: none;
     left: 91%;
-    z-index: 2;
+    top: 38%;
+
+    @media (min-width: 992px) {
+      display: block;
+    }
+
+    @media (min-width: 1200px) {
+      z-index: 2;
+    }
   }
 }
 
