@@ -164,3 +164,23 @@ a {
     opacity: 1;
   }
 }
+
+@keyframes super-ship {
+  0% {
+    opacity: 0;
+    transform: translate(55vw, 40vh) scale(1.5);
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  95% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-70vw, -40vh) scale(0.4);
+  }
+}

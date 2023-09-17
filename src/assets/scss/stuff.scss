@@ -268,3 +268,15 @@
     }
   }
 }
+
+.super-ship {
+  animation: super-ship 20s ease 0.3s infinite forwards;
+  left: 50%;
+  pointer-events: none;
+  position: absolute;
+  top: 40%;
+
+  @media (min-width: 1200px) {
+    top: 50%;
+  }
+}
