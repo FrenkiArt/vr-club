@@ -119,6 +119,15 @@ button {
       filter: blur(10px) drop-shadow(0px 0px 30px rgba(255, 0, 161, 1));
     }
   }
+
+  span.btn-main__inner {
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-flex;
+    overflow: initial;
+  }
 }
 
 .btn.btn-main {
