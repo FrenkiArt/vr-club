@@ -33,9 +33,14 @@ button {
   }
 }
 
+.btn-main:active {
+  padding: 0;
+}
+
 .btn-main {
   border-color: transparent;
   border-radius: 0;
+  border: none;
   color: #ffffff;
   font-size: 18px;
   line-height: 26px;
