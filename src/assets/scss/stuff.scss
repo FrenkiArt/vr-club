@@ -147,6 +147,8 @@
     mix-blend-mode: lighten;
     width: 100%;
     z-index: -1;
+    max-width: auto;
+    max-height: auto;
 
     @media (min-width: 1200px) {
       display: block;
