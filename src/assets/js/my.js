@@ -1,15 +1,11 @@
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 
-/* window.addEventListener('resize', function (e) {
+window.addEventListener('resize', function (e) {
   console.log(window.innerWidth);
-}); */
+});
 
 document.addEventListener('DOMContentLoaded', () => {
-  if (document.querySelector('input[type=tel]')) {
-    telMasksTrigger();
-  }
-
   const sliderZones = new Swiper('.slider-zones', {
     watchSlidesProgress: true,
 
