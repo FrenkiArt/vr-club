@@ -13,6 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const sliderZones = new Swiper('.slider-zones', {
     watchSlidesProgress: true,
 
+    modules: [Navigation],
+
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
