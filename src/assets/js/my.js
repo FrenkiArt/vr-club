@@ -1,8 +1,6 @@
-import IMask from 'imask';
-
-window.addEventListener('resize', function (e) {
+/* window.addEventListener('resize', function (e) {
   console.log(window.innerWidth);
-});
+}); */
 
 document.addEventListener('DOMContentLoaded', () => {
   if (document.querySelector('input[type=tel]')) {
@@ -35,15 +33,3 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 });
-
-function telMasksTrigger() {
-  document.querySelectorAll('input[type=tel]').forEach((el) => {
-    window.telArr = [];
-
-    window.telArr.push(
-      IMask(el, {
-        mask: '+{7} 000 000 00 00',
-      })
-    );
-  });
-}
