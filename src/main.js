@@ -2,9 +2,6 @@
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper';
-
 // my
 import './assets/scss/custom-bootstrap.scss';
 import './assets/scss/style.scss';

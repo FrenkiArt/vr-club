@@ -1,3 +1,6 @@
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper';
+
 /* window.addEventListener('resize', function (e) {
   console.log(window.innerWidth);
 }); */
