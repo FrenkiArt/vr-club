@@ -5,9 +5,8 @@
     #211740 50%,
     rgba(33, 23, 64, 0) 100%
   );
-  padding-top: var(--header-height);
   position: relative;
-  padding: 0;
+  padding: var(--header-height) 0 0;
 
   // .sec-first__bg
   &__bg {
